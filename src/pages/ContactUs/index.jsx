@@ -44,7 +44,7 @@ class ContactUs extends PureComponent {
       <div className={styles.contactUs}>
         <ul className={styles.container}>
           <li>
-            <img src={require('./images/img01.png')} alt="" />
+            <img src={require('./images/img01.png')} alt=""/>
             <div className={styles.rightInfo}>
               <div className={styles.column}>市场合作</div>
               <div className={styles.name}>李先生</div>
@@ -52,7 +52,7 @@ class ContactUs extends PureComponent {
             </div>
           </li>
           <li>
-            <img src={require('./images/img02.png')} alt="" />
+            <img src={require('./images/img02.png')} alt=""/>
             <div className={styles.rightInfo}>
               <div className={styles.column}>投诉举报</div>
               <div className={styles.name}>李先生</div>
@@ -61,9 +61,13 @@ class ContactUs extends PureComponent {
           </li>
         </ul>
         <div
-          ref={(c) => { this.container = c }}
+          ref={(c) => {
+            this.container = c
+          }}
           style={{
-            width: '100%', height: '500px',
+            // margin: '0 auto',
+            // width: '1200px',
+            height: '500px',
           }}
         />
       </div>
@@ -110,7 +114,7 @@ class ContactUsMobile extends PureComponent {
       <div className={styles.contactUsMobile}>
         <ul className={styles.container}>
           <li>
-            <img src={require('./images/img01.png')} alt="" />
+            <img src={require('./images/img01.png')} alt=""/>
             <div className={styles.rightInfo}>
               <div className={styles.column}>市场合作</div>
               <div className={styles.name}>李先生</div>
@@ -118,7 +122,7 @@ class ContactUsMobile extends PureComponent {
             </div>
           </li>
           <li>
-            <img src={require('./images/img02.png')} alt="" />
+            <img src={require('./images/img02.png')} alt=""/>
             <div className={styles.rightInfo}>
               <div className={styles.column}>投诉举报</div>
               <div className={styles.name}>李先生</div>
@@ -127,9 +131,12 @@ class ContactUsMobile extends PureComponent {
           </li>
         </ul>
         <div
-          ref={(c) => { this.container = c }}
+          ref={(c) => {
+            this.container = c
+          }}
           style={{
-            width: '100%', height: '500px',
+            width: '100%',
+            height: '500px',
           }}
         />
       </div>
