@@ -1,0 +1,96 @@
+@import "static/iconfont/iconfont.css";
+@import "static/css/reset.css";
+@import "~@/static/css/variables";
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  line-height: normal;
+  outline: none;
+  background: transparent;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+//common css
+
+.wrapper {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 1190px;
+}
+
+.flex-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.editor_output_css {
+  strong > span {
+    font-weight: bolder;
+  }
+
+  strong{
+    font-weight: bolder;
+  }
+
+  ul, ol {
+    margin: 16px 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: disc inside none;
+  }
+
+  ol > li {
+    list-style-type: decimal;
+  }
+
+  .image-wrap {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    min-height: 1em;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: #000;
+  }
+}
+
