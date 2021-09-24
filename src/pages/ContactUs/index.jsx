@@ -23,13 +23,14 @@ class ContactUs extends PureComponent {
     const currentCity = temp.join('')
     const defaultLocation = currentCity || '安徽省铜陵市'
     const myGeo = new BMap.Geocoder()
+
     myGeo.getPoint(location, (point) => {
       if (point) {
         const marker = new BMap.Marker(point)
         map.centerAndZoom(point, 18)
-        map.enableInertialDragging()
-        map.enableContinuousZoom()
-        map.enableScrollWheelZoom(true)
+        map.disableDoubleClickZoom()
+        map.disableDragging()
+        // map.enableScrollWheelZoom(false)
         map.addControl(new BMap.NavigationControl())
         map.addControl(new BMap.ScaleControl())
         map.addControl(new BMap.OverviewMapControl())
@@ -97,9 +98,9 @@ class ContactUsMobile extends PureComponent {
       if (point) {
         const marker = new BMap.Marker(point)
         map.centerAndZoom(point, 18)
-        map.enableInertialDragging()
-        map.enableContinuousZoom()
-        map.enableScrollWheelZoom(true)
+        map.disableDoubleClickZoom()
+        map.disableDragging()
+        // map.enableScrollWheelZoom(false)
         map.addControl(new BMap.NavigationControl())
         map.addControl(new BMap.ScaleControl())
         map.addControl(new BMap.OverviewMapControl())

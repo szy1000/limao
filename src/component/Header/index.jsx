@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { Link, withRouter } from 'umi'
-import { BackTop }  from 'antd'
+import { BackTop } from 'antd'
 import styles from './style.less'
 
 const isPc = !navigator.userAgent.match(/AppleWebKit.*Mobile.*/)
@@ -36,11 +36,13 @@ class Header extends PureComponent {
       <div className={styles.header}>
         <div className={`${styles.headerBar} ${scrollSta ? styles.on : ''}`}>
           <div className={styles.container}>
-            <img className={styles.logo} src={scrollSta ? require('./images/roll-logo.png') : require('./images/logo.png')} alt="" />
+            <img className={styles.logo}
+                 src={scrollSta ? require('./images/roll-logo.png') : require('./images/logo.png')} alt=""/>
             <ul className={styles.nav}>
               <li className={`${pathname === 'index' ? styles.on : ''}`}><Link to="/">首页</Link></li>
               <li className={`${pathname === '' ? styles.on : ''}`}><Link to="/open">开放平台</Link></li>
-              <li className={`${(pathname === 'mediaReports' || pathname === 'detail') ? styles.on : ''}`}><Link to="/mediaReports">媒体报道</Link></li>
+              <li className={`${(pathname === 'mediaReports' || pathname === 'detail') ? styles.on : ''}`}><Link
+                to="/mediaReports">媒体报道</Link></li>
               <li className={`${pathname === 'aboutUs' ? styles.on : ''}`}><Link to="/aboutUs">关于我们</Link></li>
               <li className={`${pathname === 'contactUs' ? styles.on : ''}`}><Link to="/contactUs">联系我们</Link></li>
             </ul>
@@ -74,7 +76,7 @@ class Header extends PureComponent {
             }
           </div>
         </div>
-        <BackTop />
+        <BackTop/>
       </div>
     )
   }
@@ -152,18 +154,26 @@ class HeaderMobile extends PureComponent {
           </div>
         </div>
         <div className={`${styles.topBar} ${(showMenuSta || scrollSta) ? styles.on : ''}`}>
-          <img className={styles.logo} src={!(showMenuSta || scrollSta) ? require('./images/logo.png') : require('./images/roll-logo.png')} alt="" />
-          <i className={`iconfont ${!showMenuSta ? 'icon-menu' : 'icon-close'}`} onClick={this.showMenu} />
+          <img className={styles.logo}
+               src={!(showMenuSta || scrollSta) ? require('./images/logo.png') : require('./images/roll-logo.png')}
+               alt=""/>
+          <i className={`iconfont ${!showMenuSta ? 'icon-menu' : 'icon-close'}`} onClick={this.showMenu}/>
         </div>
         <ul className={`${styles.nav} ${showMenuSta ? styles.on : ''}`}>
-          <li onClick={this.handleNav} className={`${pathname === 'index' ? styles.on : ''}`}><Link to="/">首页</Link></li>
-          <li onClick={this.handleNav} className={`${pathname === '' ? styles.on : ''}`}><Link to="/open">开放平台</Link></li>
-          <li onClick={this.handleNav} className={`${(pathname === 'mediaReports' || pathname === 'detail') ? styles.on : ''}`}><Link to="/mediaReports">媒体报道</Link></li>
-          <li onClick={this.handleNav} className={`${pathname === 'aboutUs' ? styles.on : ''}`}><Link to="/aboutUs">关于我们</Link></li>
-          <li onClick={this.handleNav} className={`${pathname === 'contactUs' ? styles.on : ''}`}><Link to="/contactUs">联系我们</Link></li>
+          <li onClick={this.handleNav} className={`${pathname === 'index' ? styles.on : ''}`}><Link to="/">首页</Link>
+          </li>
+          <li onClick={this.handleNav} className={`${pathname === '' ? styles.on : ''}`}><Link to="/open">开放平台</Link>
+          </li>
+          <li onClick={this.handleNav}
+              className={`${(pathname === 'mediaReports' || pathname === 'detail') ? styles.on : ''}`}><Link
+            to="/mediaReports">媒体报道</Link></li>
+          <li onClick={this.handleNav} className={`${pathname === 'aboutUs' ? styles.on : ''}`}><Link
+            to="/aboutUs">关于我们</Link></li>
+          <li onClick={this.handleNav} className={`${pathname === 'contactUs' ? styles.on : ''}`}><Link
+            to="/contactUs">联系我们</Link></li>
         </ul>
         {
-          showMenuSta && <div className={styles.shadow} />
+          showMenuSta && <div className={styles.shadow}/>
         }
       </div>
     )

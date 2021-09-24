@@ -43,7 +43,7 @@ export default [
         name: 'title',
       },
       {
-        path: '/detail',
+        path: '/detail/:id',
         component: './Detail',
         title: '详情',
         name: 'title',
