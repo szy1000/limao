@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import { Link, withRouter } from 'umi'
+import { BackTop }  from 'antd'
 import styles from './style.less'
 
 const isPc = !navigator.userAgent.match(/AppleWebKit.*Mobile.*/)
@@ -39,7 +40,7 @@ class Header extends PureComponent {
             <ul className={styles.nav}>
               <li className={`${pathname === 'index' ? styles.on : ''}`}><Link to="/">首页</Link></li>
               <li className={`${pathname === '' ? styles.on : ''}`}><Link to="/open">开放平台</Link></li>
-              <li className={`${pathname === 'mediaReports' ? styles.on : ''}`}><Link to="/mediaReports">媒体报道</Link></li>
+              <li className={`${(pathname === 'mediaReports' || pathname === 'detail') ? styles.on : ''}`}><Link to="/mediaReports">媒体报道</Link></li>
               <li className={`${pathname === 'aboutUs' ? styles.on : ''}`}><Link to="/aboutUs">关于我们</Link></li>
               <li className={`${pathname === 'contactUs' ? styles.on : ''}`}><Link to="/contactUs">联系我们</Link></li>
             </ul>
@@ -48,7 +49,7 @@ class Header extends PureComponent {
         <div className={`${styles.headerBg} ${pathname}`}>
           <div className={styles.container}>
             {
-              pathname === 'mediaReports' && (
+              (pathname === 'mediaReports' || pathname === 'detail') && (
                 <div className={styles.pageColumn}>
                   <div className={styles.zhColumn}>媒体报道</div>
                   <div className={styles.enColumn}>Media Reports</div>
@@ -73,6 +74,7 @@ class Header extends PureComponent {
             }
           </div>
         </div>
+        <BackTop />
       </div>
     )
   }
@@ -124,7 +126,7 @@ class HeaderMobile extends PureComponent {
         <div className={`${styles.headerMobileBg} ${pathname}`}>
           <div className={styles.container}>
             {
-              pathname === 'mediaReports' && (
+              (pathname === 'mediaReports' || pathname === 'detail') && (
                 <div className={styles.pageColumn}>
                   <div className={styles.zhColumn}>媒体报道</div>
                   <div className={styles.enColumn}>Media Reports</div>
@@ -156,7 +158,7 @@ class HeaderMobile extends PureComponent {
         <ul className={`${styles.nav} ${showMenuSta ? styles.on : ''}`}>
           <li onClick={this.handleNav} className={`${pathname === 'index' ? styles.on : ''}`}><Link to="/">首页</Link></li>
           <li onClick={this.handleNav} className={`${pathname === '' ? styles.on : ''}`}><Link to="/open">开放平台</Link></li>
-          <li onClick={this.handleNav} className={`${pathname === 'mediaReports' ? styles.on : ''}`}><Link to="/mediaReports">媒体报道</Link></li>
+          <li onClick={this.handleNav} className={`${(pathname === 'mediaReports' || pathname === 'detail') ? styles.on : ''}`}><Link to="/mediaReports">媒体报道</Link></li>
           <li onClick={this.handleNav} className={`${pathname === 'aboutUs' ? styles.on : ''}`}><Link to="/aboutUs">关于我们</Link></li>
           <li onClick={this.handleNav} className={`${pathname === 'contactUs' ? styles.on : ''}`}><Link to="/contactUs">联系我们</Link></li>
         </ul>

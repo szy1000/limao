@@ -33,8 +33,8 @@ class Index extends Component {
 
     const swiper = new Swiper('.swiper-container-cooperate', {
       // pagination: '.swiper-pagination',
-      nextButton: '.icon-previewleft',
-      prevButton: '.icon-previewright',
+      nextButton: '.icon-previewright',
+      prevButton: '.icon-previewleft',
       slidesPerView: 6, // 设置slider容器能够同时显示的slides数量(carousel模式)。
       centeredSlides: false, // 设定为true时，活动块会居中，而不是默认状态下的居左。
       paginationClickable: false, // 此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
