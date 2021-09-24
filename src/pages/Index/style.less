@@ -10,8 +10,8 @@
       text-align: center;
       font-size: 80px;
       font-weight: bold;
-      //color: #f1f4f7;
       color: rgba(241, 244, 247, .8);
+      user-select:none;
       .zhColumn {
         position: absolute;
         left: 50%;
@@ -212,8 +212,9 @@
         flex-direction: column;
         padding-bottom: 36px;
         cursor: pointer;
+        border-bottom: 4px solid #fff;
         &.on {
-          border-bottom: 4px solid #086eec;
+          border-bottom-color: #086eec;
           &:after {
             position: absolute;
             bottom: -24px;
@@ -380,6 +381,7 @@
       font-size: 25px;
       font-weight: bold;
       color: rgba(241, 244, 247, .8);
+      user-select:none;
       .zhColumn {
         position: absolute;
         left: 50%;
@@ -427,15 +429,15 @@
     width: 100%;
     padding: 0 24px 0 12px;
     box-sizing: border-box;
-    &:after {
-      position: absolute;
-      top: 0;
-      left: 76px;
-      content: "";
-      width: 1px;
-      height: 100%;
-      background: #f1f4f7;
-    }
+    //&:after {
+    //  position: absolute;
+    //  top: 0;
+    //  left: 76px;
+    //  content: "";
+    //  width: 1px;
+    //  height: 100%;
+    //  background: #f1f4f7;
+    //}
     li {
       position: relative;
       z-index: 10;
@@ -457,6 +459,22 @@
         :global{
           .icon-radiopress {
             color: #2285ff;
+          }
+        }
+      }
+      &:nth-child(1) {
+        :global {
+          .icon-radiopress {
+            &:after {
+              position: absolute;
+              top: -14px;
+              left: 7px;
+              z-index: -1;
+              content: "";
+              width: 1px;
+              height: 300px;
+              background: #f1f4f7;
+            }
           }
         }
       }
@@ -487,12 +505,14 @@
           border-right-color: #f1f4f7;
         }
       }
-      :global{
+      :global {
         .icon-radiopress {
+          position: relative;
           margin-right: 15px;
           //position: relative;
           //z-index: 100;
           color: #b3c5d8;
+          z-index: 1;
         }
       }
     }

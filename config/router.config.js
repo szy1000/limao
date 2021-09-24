@@ -42,6 +42,12 @@ export default [
         title: '联系我们',
         name: 'title',
       },
+      {
+        path: '/detail',
+        component: './Detail',
+        title: '详情',
+        name: 'title',
+      },
     ],
   },
 ]
