@@ -7,12 +7,12 @@ export default [
         path: '/404',
         component: './404.js',
       },
+      // {
+      //   path: '/',
+      //   redirect: './index',
+      // },
       {
         path: '/',
-        redirect: './index',
-      },
-      {
-        path: '/index',
         component: './Index',
         title: '首页',
         name: 'title',

@@ -83,15 +83,16 @@ class About extends PureComponent {
               <div className={styles.desc}>做最具规模的互联网流量整合专家</div>
               <div className={styles.column} style={{ marginTop: 28 }}>人文理念</div>
               <div className={styles.columnSub}>诚信 /</div>
-              <div className={styles.desc}>努力完成对别人的承诺，勇于承担责任，干好本职工作</div>
-              <div className={styles.columnSub}>简单 /</div>
-              <div className={styles.desc}>花最少时间实现最大价值，提高效率，追求结果</div>
-              <div className={styles.columnSub}>自信 /</div>
-              <div className={styles.desc}>相信自己与团队才能与团队共同成长实现目标</div>
+              <div className={styles.desc}>诚实正直，信守承诺</div>
+              <div className={styles.columnSub}>使命 /</div>
+              <div className={styles.desc}>链接所有合作伙伴 创造价值</div>
               <div className={styles.columnSub}>激情 /</div>
-              <div className={styles.desc}>有高昂的精神状态，在工作中倾注激情，与企业共同成长</div>
-              <div className={styles.columnSub}>速度 /</div>
-              <div className={styles.desc}>从单一业务到多元化的蜕变输不起慢的代价激情</div>
+              <div className={styles.desc}>永不言弃，乐观向上 </div>
+
+              <div className={styles.columnSub}>敬业 /</div>
+              <div className={styles.desc}>以专业的态度和平常的心态做非凡的事情</div>
+              <div className={styles.columnSub}>责任 /</div>
+              <div className={styles.desc}>不患无策，只怕无心</div>
             </div>
           </div>
         </div>
@@ -170,21 +171,20 @@ class AboutMobile extends PureComponent {
         <div className={styles.culture}>
           <div className={styles.title}>企业文化 /</div>
           <div className={styles.cont}>
-            {/*<img src={require('./images/qywh.png')} alt="" />*/}
             <div className={styles.rightPart}>
               <div className={styles.column}>企业愿景</div>
               <div className={styles.desc}>做最具规模的互联网流量整合专家</div>
               <div className={styles.column} style={{ marginTop: 14 }}>人文理念</div>
               <div className={styles.columnSub}>诚信 /</div>
-              <div className={styles.desc}>努力完成对别人的承诺，勇于承担责任，干好本职工作</div>
-              <div className={styles.columnSub}>简单 /</div>
-              <div className={styles.desc}>花最少时间实现最大价值，提高效率，追求结果</div>
-              <div className={styles.columnSub}>自信 /</div>
-              <div className={styles.desc}>相信自己与团队才能与团队共同成长实现目标</div>
+              <div className={styles.desc}>诚实正直，信守承诺</div>
+              <div className={styles.columnSub}>使命 /</div>
+              <div className={styles.desc}>链接所有合作伙伴 创造价值</div>
               <div className={styles.columnSub}>激情 /</div>
-              <div className={styles.desc}>有高昂的精神状态，在工作中倾注激情，与企业共同成长</div>
-              <div className={styles.columnSub}>速度 /</div>
-              <div className={styles.desc}>从单一业务到多元化的蜕变输不起慢的代价激情</div>
+              <div className={styles.desc}>永不言弃，乐观向上 </div>
+              <div className={styles.columnSub}>敬业 /</div>
+              <div className={styles.desc}>以专业的态度和平常的心态做非凡的事情</div>
+              <div className={styles.columnSub}>责任 /</div>
+              <div className={styles.desc}>不患无策，只怕无心</div>
             </div>
           </div>
         </div>

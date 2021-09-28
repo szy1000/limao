@@ -31,8 +31,12 @@ class Footer extends PureComponent {
         <div className={styles.footerBottom}>
           <span>
             <a href="https://beian.miit.gov.cn/" target="_blank">
-              浙ICP备19027550号-1 | 浙公网安备 33028202000661号 </a>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 法律顾问：上海市恒业律师事务所吴宸桦律师
+              浙ICP备19027550号-1  </a>|
+
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo" target='_blank'> 浙公网安备 33028202000661号</a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href='http://hengyelawfirm.com/lvshipdf/lvshi/%E5%90%B4%E5%AE%B8%E6%A1%A6.pdf'
+               target='_blank'>法律顾问：上海市恒业律师事务所吴宸桦律师</a>
           </span>
           <span>Copyright©2014-2021 宁波狸猫网络科技有限公司版权所有</span>
         </div>
@@ -58,8 +62,12 @@ class FooterMobile extends PureComponent {
         </ul>
         <div className={styles.footerBottom}>
           <span>  <a href="https://beian.miit.gov.cn/"
-                     target="_blank">浙ICP备19027550号-1 | 浙公网安备 33028202000661号</a> </span>
-          <span>法律顾问：上海市恒业律师事务所吴宸桦律师</span>
+                     target="_blank">浙ICP备19027550号-1</a> |
+
+              <a href="http://www.beian.gov.cn/portal/registerSystemInfo" target='_blank'>浙公网安备 33028202000661号</a>
+          </span>
+          <a href='http://hengyelawfirm.com/lvshipdf/lvshi/%E5%90%B4%E5%AE%B8%E6%A1%A6.pdf'
+             target='_blank'>法律顾问：上海市恒业律师事务所吴宸桦律师</a>
           <span>Copyright©2014-2021 宁波狸猫网络科技有限公司版权所有</span>
         </div>
       </div>

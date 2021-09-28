@@ -10,20 +10,13 @@ export default {
   treeShaking: true,
   base: '/',
   publicPath: './',
-  history: 'hash',
+  // history: 'hash',
+  history: 'browser',
   hash: true,
   devtool: isDev ? 'cheap-module-source-map' : 'cheap-module-eval-source-map',
   outputPath: './limao',
-  devServer: {
-    overlay: {
-      warnings: true,
-      error: true,
-    },
-  },
 
-  externals: {
-
-  },
+  // externals: {},
   plugins: [
     [
       'umi-plugin-react',
@@ -45,15 +38,15 @@ export default {
     ],
     // 是否启用antd的<LocaleProvider />
     // 这里暂时还没有添加配置，该插件还不会有作用，我们会在后面的课程按照需求打开相应的配置
-    [
-      'umi-plugin-pro-block',
-      {
-        moveMock: false,
-        moveService: false,
-        modifyRequest: true,
-        autoAddMenu: true,
-      },
-    ],
+    // [
+    //   'umi-plugin-pro-block',
+    //   {
+    //     moveMock: false,
+    //     moveService: false,
+    //     modifyRequest: true,
+    //     autoAddMenu: true,
+    //   },
+    // ],
   ],
   // 加入 theme 定义
   theme: {

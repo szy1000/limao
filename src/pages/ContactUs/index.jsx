@@ -60,16 +60,16 @@ class ContactUs extends PureComponent {
             </div>
           </li>
         </ul>
-        <div
-          ref={(c) => {
-            this.container = c
-          }}
-          style={{
-            // margin: '0 auto',
-            // width: '1200px',
-            height: '500px',
-          }}
-        />
+        {/*<div*/}
+        {/*  ref={(c) => {*/}
+        {/*    this.container = c*/}
+        {/*  }}*/}
+        {/*  style={{*/}
+        {/*    // margin: '0 auto',*/}
+        {/*    // width: '1200px',*/}
+        {/*    height: '500px',*/}
+        {/*  }}*/}
+        {/*/>*/}
       </div>
     )
   }
@@ -129,15 +129,15 @@ class ContactUsMobile extends PureComponent {
             </div>
           </li>
         </ul>
-        <div
-          ref={(c) => {
-            this.container = c
-          }}
-          style={{
-            width: '100%',
-            height: '500px',
-          }}
-        />
+        {/*<div*/}
+        {/*  ref={(c) => {*/}
+        {/*    this.container = c*/}
+        {/*  }}*/}
+        {/*  style={{*/}
+        {/*    width: '100%',*/}
+        {/*    height: '500px',*/}
+        {/*  }}*/}
+        {/*/>*/}
       </div>
     )
   }
